@@ -35,7 +35,7 @@ async fn main() -> std::io::Result<()> {
 
     let target = format!("{}:{}", "0.0.0.0", "7878");
 
-    println!("Server ready at {}", format!("http://{}", &target));
+    info!("Server ready at {}", format!("http://{}", &target));
 
     HttpServer::new(move || {
         App::new()
